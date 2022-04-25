@@ -1,0 +1,139 @@
+    <!-- NAVEGADOR -->
+    <nav class="navbar navbar-expand-lg" style="background: #202020;">
+        <div class="container-fluid">
+          <a id="clubnav" class="navbar-brand" href="index.html">
+            <img src="images/escudo.png" alt="cluboeste" width="30" height="24"> CLUB OESTE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNavDropdown">
+            <ul class="navbar-nav" id="clubnav2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" style="color: #fff;">El Club</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pag/socios.html" style="color: #fff;">Socios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pag/shop.html" style="color: #fff;">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pag/info.html" style="color: #fff;">Info</a>
+              </li>
+          </div>
+          <span id="elclub" class="navbar-text">
+            MÁS QUE UN CLUB
+          </span>
+        </div>
+      </nav>
+
+
+    <!-- BARRA BAJA -->
+    <div class="top-bar">
+        <span></span>
+        <ul>
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        </ul>
+    </div>
+
+
+    <!-- EL CLUB -->
+
+    <div>
+      <div id="elclub-caja">
+        <div id="elclub-contenido">
+          <h1 id="elclub-titulo"> <img id="elclub-img" src="images/escudoblanco.png" alt="">
+            QUIENES SOMOS</h1>
+          <p id="elclub-texto1">
+            El Club Atlético Oeste de Ituzaingó nació de la pasión por el deporte como forma de vida. 
+            Y es esta forma de sentir y entender el deporte la que nos llevó a crear, en el año 2014, la que hoy es una entidad afianzada y volcada en la gestión deportiva.
+          </p>
+          <p id="elclub-texto2">
+            Nuestra misión consiste en hacer del deporte mucho más que una simple actividad física. Trabajamos en todas las dimensiones de la práctica deportiva:
+            
+          </p>
+
+          <ul class="ul1">
+            
+            <li class="p1">
+              <span class="s1">
+                <strong>&#8211; Salud:</strong> garantizando un pleno desarrollo físico y mental.
+              </span>
+            </li>
+
+            <li class="p1">
+              <span class="s1">
+                <strong>&#8211; Educación:</strong> facilitando la transmisión de valores éticos esenciales.
+              </span>
+            </li>
+
+            <li class="p1">
+              <span class="s1">
+                <strong>&#8211; Ocio:</strong> no te conformes con entretenerte, ¡disfruta al máximo!
+              </span>
+            </li>
+
+            <li class="p1">
+              <span class="s1">
+                <strong>&#8211; Atención a la diversidad:</strong> nos aseguramos de que las deficiencias económicas, culturales, sexuales,
+                 físicas o técnicas no sean jamás una limitación para acceder al deporte.
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    {{!-- CONTACTO --}}
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col order-first" id="mapa">
+        <h2 id="mapatext">MAPA</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.5173261309887!2d-58.66366143317756!3d-34.66689078443955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc0a39c10dc41%3A0xe7084a4ef95fb634!2sEstadio%20de%20Ituzaing%C3%B3!5e0!3m2!1ses!2sar!4v1650309104392!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p></p>
+        <span>
+          <strong style="color: #e5b82e;">ESTADIO CLUB OESTE ITUZAINGÓ</strong>
+          <p></p>
+          <p style="color: #fff;">Gral. Ángel Pacheco 800-898, Ituzaingó, Provincia de Buenos Aires</p>
+          <p style="color: #fff;">Capacidad: 25.000 personas</p> 
+        </span>
+      </div>
+      <div class="col">
+      <form action="/" method="post">
+        <h2 id="contacto">CONTACTO</h2>
+        <p id="form-margin">
+          <label>Nombre</label>
+          <input type="text" name="nombre" placeholder="Escriba aquí">
+        </p>
+        <p id="form-margin">
+          <label>Apellido</label>
+          <input type="text" name="apellido" class="form-control" placeholder="Escriba aquí">  
+        </p>
+        <p id="form-margin">
+          <label>Correo Electrónico</label>
+          <input type="text" name="correo" placeholder="Escriba aquí">
+        </p>
+        <p id="form-margin">
+          <label>Mensaje</label>
+          <textarea name="mensaje" placeholder="Escriba aquí"></textarea>
+        </p>
+        
+        <p>
+          <button type="submit" class="btn btn-light" id="boton-form">Enviar</button>
+        </p>
+
+          </form>
+                {{message}}
+
+      </div>
+    </div>
+  </div>
+
+
+
+<br> <br>
