@@ -242,3 +242,33 @@ ion-icon {
 .top-bar a:hover{
     color: #fff;
 }
+
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.login-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#pass{
+    padding-top: 20px;
+}
+
+#errorUser{
+    padding-top: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+#salir{
+    position: absolute;
+    left: 96%;
+}
