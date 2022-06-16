@@ -132,31 +132,31 @@
         </span>
       </div>
       <div class="col">
-      <form action="/" method="post">
+      <form id="form-contacto" action="/" method="post">
         <h2 id="contacto">CONTACTO</h2>
         <p id="form-margin">
-          <label>Nombre</label>
-          <input type="text" name="nombre" placeholder="Escriba aquí">
+          <label id="label-contacto">Nombre</label>
+          <input id="input-contacto" type="text" name="nombre" placeholder="Escriba aquí">
         </p>
         <p id="form-margin">
-          <label>Apellido</label>
-          <input type="text" name="apellido" class="form-control" placeholder="Escriba aquí">  
+          <label id="label-contacto">Apellido</label>
+          <input id="input-contacto" type="text" name="apellido" class="form-control" placeholder="Escriba aquí">  
         </p>
         <p id="form-margin">
-          <label>Correo Electrónico</label>
-          <input type="text" name="correo" placeholder="Escriba aquí">
+          <label id="label-contacto">Correo Electrónico</label>
+          <input id="input-contacto" type="text" name="correo" placeholder="Escriba aquí">
         </p>
         <p id="form-margin">
-          <label>Mensaje</label>
-          <textarea name="mensaje" placeholder="Escriba aquí"></textarea>
+          <label id="label-contacto">Mensaje</label>
+          <textarea id="textarea-contacto" name="mensaje" placeholder="Escriba aquí"></textarea>
         </p>
         
         <p>
           <button type="submit" class="btn btn-light" id="boton-form">Enviar</button>
         </p>
-
+                <p style="color: rgb(75, 255, 75); text-align:center;" >{{message}}</p>
           </form>
-                {{message}}
+
 
       </div>
     </div>

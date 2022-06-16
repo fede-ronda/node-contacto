@@ -1,0 +1,29 @@
+<div class="agregar-novedades">
+    <div class="agregar-contenido">
+        <div id="agregar-novedad">
+            <h4>Modificar novedad</h4>
+            <form action="/admin/novedades/modificar" method="post">
+                <input type="hidden" value="{{novedad.id}}" name="id">
+
+                <div class="form-group" id="agregar-titulo">
+                    <label for="">Titulo</label>
+                    <input type="text" class="form-control" name="titulo" value="{{novedad.titulo}}">
+                </div>
+                <div class="form-group" id="agregar-subtitulo">
+                    <label for="">Subtitulo</label>
+                    <textarea type="text" class="form-control" name="subtitulo">{{novedad.subtitulo}}</textarea>
+                </div>
+                <div class="form-group" id="agregar-cuerpo">
+                    <label for="">Cuerpo</label>
+                    <textarea type="text" class="form-control" name="cuerpo">{{novedad.cuerpo}}</textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Modificar</button>
+            </form>
+            {{#if error}}
+                <p>{{message}}</p>
+            {{/if}}
+        </div>
+
+    </div>
+
+</div>
