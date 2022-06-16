@@ -34,13 +34,6 @@ body{
     margin: 5px 10px;
 }
 
-#elclub-caja{
-    background: rgba(0, 0, 0, .8);
-    border-radius: 20px 20px 20px 20px;
-    margin: 100px auto;
-    width: 1000px;
-    height: 600px;
-}
 
 #elclub-contenido{
     color: #fff;
@@ -48,23 +41,23 @@ body{
 
 #elclub-titulo{ 
     font-family: 'Nunito', sans-serif;
-    font-size: 35px;
+    font-size: 30px;
 
 }
 #elclub-img{
-    margin: 30px 20px;
+    margin: 30px 26px;
     width: 110px;
     height: 110px;
 }
 
 #elclub-texto1{
     margin: -45px 180px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #elclub-texto2{
     margin: 60px 180px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #socio-caja{
@@ -194,7 +187,7 @@ textarea{
 }
 
 .p1{
-    font-size: 18px;
+    font-size: 16px;
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -268,7 +261,87 @@ ion-icon {
     text-align: center;
 }
 
-#salir{
-    position: absolute;
-    left: 96%;
+#boton-salir{
+    justify-content: right;
+    margin-right: 0px; 
+    margin-top: 4px;
 }
+
+.novedades-admin{
+    overflow: hidden;
+    margin: 5px;
+}
+
+.contenedor{
+display: flex;
+justify-content: center;
+margin: 20px;
+
+}
+
+.item{
+    float: left;
+    justify-content: center;
+    display: flex;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 20px 20px 20px 20px;
+    margin: 0px 6px;
+    
+
+}
+
+ #item1{
+    width: 900px;
+    height: 600px;
+    
+ }
+
+ #item2{
+    width: 450px;
+    height: 600px;
+    color: #fff;
+    
+ }
+
+ .lista-novedades{
+    list-style: none;
+    margin-top: 30px;
+    justify-content: center;
+
+ }
+.lista-novedades li {
+    margin: 4px 0;
+}
+
+ .lista-novedades li a {
+    text-decoration: none;
+    color: #fff;
+    transition: all .2s ease-in-out;
+    font-size: 16px;
+    display: block;
+
+    
+ }
+ .lista-novedades li a:hover{
+    background-color: #e5b82e;
+    width:fit-content;
+
+ }
+ .lista-novedades li a img{
+    width: 120px;
+    height: 50px;
+    filter: grayscale();
+    transition: all .2s ease-in-out;
+    opacity: 0.7;
+ }
+
+ .lista-novedades li a:hover img {
+    filter: none;
+    opacity: 1;
+ }
+
+ #novtitulo{
+    padding-top: 20px;
+ }
+
+
