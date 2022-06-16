@@ -85,38 +85,33 @@
       <div id="novtitulo">
         <h2 > Novedades </h2>
         <ul class="lista-novedades">
-          <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalEjemplo"><img src="images/pelota.png">Noticias</a></li>
-        </ul>
-        <ul class="lista-novedades">
-          <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalEjemplo"><img src="images/pelota.png">Noticias</a></li>
-        </ul>
-        <ul class="lista-novedades">
-          <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalEjemplo"><img src="images/pelota.png"> Noticias </a></li>
-        </ul>
-        <ul class="lista-novedades">
-          <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalEjemplo"><img src="images/pelota.png"> Noticias </a></li>
-        </ul>
-        <ul class="lista-novedades">
-          <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalEjemplo"><img src="images/pelota.png"> Noticias </a></li>
+          {{#each novedades}}
+          <li><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal{{id}}"><img src="images/pelota.png">{{titulo}}</a></li>
+        {{/each}}
         </ul>
       </div>
     </div>
   </div>
 
 <!-- Modal -->
-<div class="modal fade" id="modalEjemplo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+{{#each novedades}}
+
+<div class="modal fade" id="modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h4 class="modal-title" id="exampleModalLabel">{{titulo}}</h4>
+
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-        ...
+          <h5>{{subtitulo}}</h5>
+          <p>{{cuerpo}}</p>
         </div>
       </div>
     </div>
 </div>
+{{/each}}
 
     {{!-- <div class="contenedor">
       <div class="row" id="elclub-caja">
