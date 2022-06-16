@@ -2,7 +2,7 @@
     <div class="agregar-contenido">
         <div id="agregar-novedad">
             <h4>Modificar novedad</h4>
-            <form action="/admin/novedades/modificar" method="post">
+            <form action="/admin/novedades/modificar" method="post" enctype="multipart/form-data">
                 <input type="hidden" value="{{novedad.id}}" name="id">
 
                 <div class="form-group" id="agregar-titulo">
@@ -17,7 +17,18 @@
                     <label for="">Cuerpo</label>
                     <textarea type="text" class="form-control" name="cuerpo">{{novedad.cuerpo}}</textarea>
                 </div>
+
+                <div class="form-group" id="agregar-subtitulo">
+                    <label>Imagen: <input class="form-control" type="file" name="imagen" id="imagen"></label>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="img_delete" id="img_delete" value="1">
+                    ¿Eliminar imagen actual?</label>
+                    <input type="hidden" name="img_original" value="{{novedad.img_id}}">
+                </div>
+
                 <button type="submit" class="btn btn-primary">Modificar</button>
+            
             </form>
             {{#if error}}
                 <p>{{message}}</p>

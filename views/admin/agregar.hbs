@@ -2,15 +2,18 @@
     <div class="agregar-contenido">
         <div id="agregar-novedad">
             <h4>Agregar una nueva novedad</h4>
-            <form action="/admin/novedades/agregar" method="post">
+            <form action="/admin/novedades/agregar" method="post" enctype="multipart/form-data">
                 <div class="form-group" id="agregar-titulo">
                     <input type="text" class="form-control" placeholder="Titulo" name="titulo">
                 </div>
-                <div class="form-group" id="agregar-subtitulo">
+                <div class="form-group" id="agregar-cuerpo">
                     <textarea type="text" class="form-control" placeholder="Subtitulo" name="subtitulo"></textarea>
                 </div>
                 <div class="form-group" id="agregar-cuerpo">
                     <textarea type="text" class="form-control" placeholder="Cuerpo" name="cuerpo"></textarea>
+                </div>
+                <div class="form-group" id="agregar-subtitulo">
+                    <label>Imagen: <input class="form-control" type="file" name="imagen" id="imagen"></label>
                 </div>
                 <button type="submit" class="btn btn-primary">Guardar</button>
             </form>
