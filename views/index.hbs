@@ -1,8 +1,8 @@
     <!-- NAVEGADOR -->
     <nav class="navbar navbar-expand-lg" style="background: #202020;">
         <div class="container-fluid">
-          <a id="clubnav" class="navbar-brand" href="">
-            <img src="images/escudo.png" alt="cluboeste" width="30" height="24"> CLUB OESTE</a>
+          <a id="clubnav" class="navbar-brand">
+            <img src="images/escudo.png" alt="cluboeste" width="30" height="24"> CLUB ATLÉTICO OESTE</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -19,7 +19,7 @@
               </li>
           </div>
           <span id="elclub" class="navbar-text">
-            MÁS QUE UN CLUB
+            La misma pasión
           </span>
         </div>
       </nav>
@@ -82,8 +82,8 @@
         </div>
     </div>
     <div class="item" id="item2">
-      <div id="novtitulo">
-        <h2 > Novedades </h2>
+      <div>
+        <h2 id="novtitulo"> Novedades </h2>
         <ul class="lista-novedades">
           {{#each novedades}}
           <li><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal{{id}}"><img src="{{imagen}}">{{titulo}}</a></li>
@@ -113,6 +113,8 @@
 </div>
 {{/each}}
 
+
+ <br> <br> 
   
 
     {{!-- CONTACTO --}}

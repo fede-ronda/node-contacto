@@ -24,10 +24,18 @@ body{
     border-bottom: 3px solid #e5b82e;
 }
 
+#admintext{
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #e5b82e;
+    margin: 5px 10px;
+}
 
 #elclub{
     display: block;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Great Vibes', cursive;
     font-size: 40px;
     font-weight: 500;
     color: #e5b82e;
@@ -315,6 +323,25 @@ margin: 20px;
     
  }
 
+.listado-background{
+background: #e5b82e ;
+height: 40px;
+width: 1212px;
+}
+
+.listado-boton{
+    text-align: right;
+    padding: 4px 0;
+}
+
+#listado-titulo{
+    margin-left: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    padding: 2px;
+    color: #202020;
+}
+
  .lista-novedades{
     list-style: none;
     margin-top: 30px;
@@ -354,6 +381,8 @@ margin: 20px;
 
  #novtitulo{
     padding-top: 20px;
+    text-align: center;
+    
  }
 
  .agregar-novedades{

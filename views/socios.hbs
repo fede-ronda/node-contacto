@@ -1,8 +1,8 @@
     <!-- NAVEGADOR -->
     <nav class="navbar navbar-expand-lg" style="background: #202020;">
         <div class="container-fluid">
-          <a id="clubnav" class="navbar-brand" href="">
-            <img src="images/escudo.png" alt="cluboeste" width="30" height="24"> CLUB OESTE</a>
+          <a id="clubnav" class="navbar-brand" >
+            <img src="images/escudo.png" alt="cluboeste" width="30" height="24"> CLUB ATLÉTICO OESTE</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -19,7 +19,7 @@
               </li>
           </div>
           <span id="elclub" class="navbar-text">
-            MÁS QUE UN CLUB
+            La misma pasión
           </span>
         </div>
       </nav>
@@ -105,31 +105,31 @@
         </span>
       </div>
       <div class="col">
-      <form action="/" method="post">
+      <form id="form-contacto" action="/" method="post">
         <h2 id="contacto">CONTACTO</h2>
         <p id="form-margin">
-          <label>Nombre</label>
-          <input type="text" name="nombre" placeholder="Escriba aquí">
+          <label id="label-contacto">Nombre</label>
+          <input id="input-contacto" type="text" name="nombre" placeholder="Escriba aquí">
         </p>
         <p id="form-margin">
-          <label>Apellido</label>
-          <input type="text" name="apellido" class="form-control" placeholder="Escriba aquí">  
+          <label id="label-contacto">Apellido</label>
+          <input id="input-contacto" type="text" name="apellido" class="form-control" placeholder="Escriba aquí">  
         </p>
         <p id="form-margin">
-          <label>Correo Electrónico</label>
-          <input type="text" name="correo" placeholder="Escriba aquí">
+          <label id="label-contacto">Correo Electrónico</label>
+          <input id="input-contacto" type="text" name="correo" placeholder="Escriba aquí">
         </p>
         <p id="form-margin">
-          <label>Mensaje</label>
-          <textarea name="mensaje" placeholder="Escriba aquí"></textarea>
+          <label id="label-contacto">Mensaje</label>
+          <textarea id="textarea-contacto" name="mensaje" placeholder="Escriba aquí"></textarea>
         </p>
         
         <p>
           <button type="submit" class="btn btn-light" id="boton-form">Enviar</button>
         </p>
-
+                <p style="color: rgb(75, 255, 75); text-align:center;" >{{message}}</p>
           </form>
-                {{message}}
+
 
       </div>
     </div>
